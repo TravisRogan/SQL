@@ -1,4 +1,6 @@
-SET DATEFIRST 6;
+-- This is the SQL used to generate weekly attendance reports for senior leadership in Tableau
+
+--SET DATEFIRST 6;
 -- ADULT ATTENDANCE
 
 Select
@@ -12,6 +14,8 @@ CONCAT(
 	RIGHT('0' + CAST(DATEPART(MINUTE, e.event_Start_Date) AS VARCHAR(2)),2)) AS 'Time',
 e.Event_Start_Date ,
 e.Event_Title,
+-- The "Metric Congregation" is a custom datapoint I created in order to connect metrics wit
+-- their corresponding congregation
 nmc.Congregation_ID AS "Metric Cong",
 c.Congregation_Name,
 'Adults' AS 'Attendance Type'
