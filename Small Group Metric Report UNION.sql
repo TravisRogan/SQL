@@ -1,3 +1,5 @@
+--This is an example of using a union to compile a report of multiple types of small groups all in one export
+
 -- Use this report to generate data for CMT small group reporting
 SELECT 
     c.Display_Name,
