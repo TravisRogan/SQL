@@ -1,4 +1,4 @@
--- This was ultimately a simple code, but required some consideration to make sure the joins were done properly. I've annoted within the code where the potential 
+-- This was ultimately a simple code, but required some consideration to make sure the joins were done properly. I've annotated within the code where the potential 
 -- hiccups would've occured.
 
 SELECT
