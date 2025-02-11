@@ -1,3 +1,6 @@
+-- This was ultimately a simple code, but required some consideration to make sure the joins were done properly. I've annoted within the code where the potential 
+-- hiccups would've occured.
+
 SELECT
 d.Donor_ID,
 c.Display_Name,
@@ -21,4 +24,4 @@ AND c2.Congregation_ID <> p.Congregation_ID
   -- To ensure that the congregation ID of the household (households is joined to c2) does not match the donation congregation (congregation ID is a foreign key in
   -- Programs, which is joined to Donation_Distributions
 AND p.Program_ID IN (26,118,119,120,205,254,317,318,328, 341)
- -- The year-end giving program ID's
+ -- The year-end giving program ID's to ensure that we don't bog down the report with other giving
