@@ -1,6 +1,8 @@
 -- This was ultimately a simple code, but required some consideration to make sure the joins were done properly. I've annotated within the code where the potential 
 -- hiccups would've occured.
 
+-- The idea behind this code is to show me a list of donors who gave to a year-end fund for a campus different than the campus currently set as their home affiliation.
+
 SELECT
 d.Donor_ID,
 c.Display_Name,
